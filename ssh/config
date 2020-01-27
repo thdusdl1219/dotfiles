@@ -1,0 +1,37 @@
+Host advos
+	HostName bombshell.gtisc.gatech.edu
+
+Host seclab
+	HostName computron.gtisc.gatech.edu
+  User  spark720
+  Port  2022
+
+Host defcon
+  HostName 172.16.88.128
+
+Host mpk
+	HostName mindwipe.gtisc.gatech.edu
+
+Host computron
+	HostName computron.gtisc.gatech.edu
+
+Host allspark 
+	HostName allspark.gtisc.gatech.edu
+
+Host fuzz1
+  HostName iron.gtisc.gatech.edu
+
+Host fuzz2
+  HostName tellurium.gtisc.gatech.edu
+
+Host fuzz3
+  HostName cutthroat.gtisc.gatech.edu
+
+Host fuzz4
+  HostName pounce.gtisc.gatech.edu
+
+Host fuzz5
+  HostName 143.215.207.87
+
+Host fuzz6
+  HostName 143.215.206.122
