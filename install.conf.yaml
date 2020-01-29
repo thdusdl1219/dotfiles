@@ -58,7 +58,11 @@
         create: true
     ~/.p10k.zsh:
         path: zsh/p10k.zsh
-
+    ~/.vim/config:
+        path: vim
+        create: true
+        relink: false
+        force: false
 
 
 - shell:

@@ -13,6 +13,7 @@ source ~/.dotfiles/zsh/antigen.zsh
 # antigen
 antigen use oh-my-zsh
 antigen bundle git
+antigen bundle command-not-found
 antigen bundle andrewferrier/fzf-z
 antigen bundle changyuheng/zsh-interactive-cd
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -115,7 +116,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fasd)
+plugins=(git fasd command-not-found)
 
 
 source $ZSH/oh-my-zsh.sh
