@@ -68,3 +68,4 @@
 - shell:
         - [git submodule update --init --recursive, Installing submodules]
         - [~/.fzf/install --all, Installing FZF]
+        - [pip3 install pynvim, Installing pynvim]
