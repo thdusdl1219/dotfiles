@@ -56,6 +56,9 @@
     ~/.fzf:
         path: fzf
         create: true
+    ~/.p10k.zsh:
+        path: zsh/p10k.zsh
+
 
 
 - shell:
