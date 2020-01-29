@@ -18,3 +18,7 @@ fi
 
 # set PATH so it includes user's private bin directories
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
+#ADDED BY 010 EDITOR
+export PATH="$PATH:/Applications/010 Editor.app/Contents/CmdLine"

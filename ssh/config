@@ -35,3 +35,11 @@ Host fuzz5
 
 Host fuzz6
   HostName 143.215.206.122
+
+Host gt
+	HostName soyeon.gtisc.gatech.edu
+	User soyeon
+Host woo 
+  HostName 192.168.1.3 
+Host vm 
+  HostName 192.168.231.141 

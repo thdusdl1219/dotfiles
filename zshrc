@@ -1,22 +1,70 @@
-export LANGUAGE=en_US.UTF-8
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# source Antigen
+source ~/.dotfiles/zsh/antigen.zsh
+
+
+# antigen
+antigen use oh-my-zsh
+antigen bundle git
+antigen bundle andrewferrier/fzf-z
+antigen bundle changyuheng/zsh-interactive-cd
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-history-substring-search
+
+# Do OS dependant stuff
+case `uname` in
+  Darwin)
+    # Commands for OS X go here
+    antigen bundle osx
+  ;;
+  Linux)
+    # Commands for Linux go here
+  ;;
+esac
+
+antigen theme denysdovhan/spaceship-prompt
+
+antigen apply
+
+case `uname` in
+  Darwin)
+    # Commands for OS X go here
+	export LANGUAGE=en_US.UTF-8
+	export LANG=en_US.UTF-8
+	export LC_ALL=en_US.UTF-8
+	export PATH=/Users/soyeon/Library/Python/2.7/bin:$PATH
+	export PATH=/Users/soyeon/bin:/opt/local/bin:/opt/local/sbin:$PATH
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/soyeon/.oh-my-zsh
+	export ZSH="/Users/soyeon/.oh-my-zsh"
+  ;;
+  Linux)
+    # Commands for Linux go here
+	export PATH=/home/soyeon/bin:$PATH
+	export LD_LIBRARY_PATH=/home/soyeon/z3/build:$LD_LIBRARY_PATH
+	export PYTHONPATH=/home/soyeon/z3/build/python:$PATHONPATH
+	export ZSH="/home/soyeon/.oh-my-zsh"
+  ;;
+esac
+alias readlink=greadlink
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="spaceship"
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
@@ -40,21 +88,27 @@ ZSH_THEME="spaceship"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
- DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Which plugins would you like to load?
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions fasd)
+plugins+=(k)
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -75,9 +129,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -86,18 +137,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
-export LD_LIBRARY_PATH=/home/soyeon/z3/build:$LD_LIBRARY_PATH
-export PYTHONPATH=/home/soyeon/z3/build/python:$PATHONPATH
-#export PATH=/home/soyeon/GT/1-2/compiler/llvm-build/bin:$PATH
-export PATH=/home/soyeon/bin:$PATH
+
 
 alias vu=/usr/bin/vi
 alias v=/usr/bin/vi
 alias gdb=pwndbg
 alias wttr="curl wttr.in/Atlanta\?m"
-
 PROMPT='%{$fg[yellow]%}[%D{%f/%m/%y} %D{%L:%M:%S}] '$PROMPT
-source /home/soyeon/tmp/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export EDITOR='vi'
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
