@@ -11,6 +11,8 @@ antigen bundle changyuheng/zsh-interactive-cd
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle supercrabtree/k
+antigen bundle clvv/fasd
 
 # Do OS dependant stuff
 case `uname` in
@@ -36,14 +38,14 @@ case `uname` in
 	export PATH=/Users/soyeon/Library/Python/2.7/bin:$PATH
 	export PATH=/Users/soyeon/bin:/opt/local/bin:/opt/local/sbin:$PATH
 # Path to your oh-my-zsh installation.
-	export ZSH="/Users/soyeon/.oh-my-zsh"
+	export ZSH="/Users/soyeon/.antigen/bundles/robbyrussell/oh-my-zsh"
   ;;
   Linux)
     # Commands for Linux go here
 	export PATH=/home/soyeon/bin:$PATH
 	export LD_LIBRARY_PATH=/home/soyeon/z3/build:$LD_LIBRARY_PATH
 	export PYTHONPATH=/home/soyeon/z3/build/python:$PATHONPATH
-	export ZSH="/home/soyeon/.oh-my-zsh"
+	export ZSH="/home/soyeon/.antigen/bundles/robbyrussell/oh-my-zsh"
   ;;
 esac
 alias readlink=greadlink
@@ -52,7 +54,7 @@ alias readlink=greadlink
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
+# ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -106,8 +108,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions fasd)
-plugins+=(k)
+plugins=(git fasd)
 
 
 source $ZSH/oh-my-zsh.sh
