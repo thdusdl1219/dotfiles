@@ -153,6 +153,9 @@ alias v=/usr/bin/vi
 alias gdb=pwndbg
 alias wttr="curl wttr.in/Atlanta\?m"
 PROMPT='%{$fg[yellow]%}[%D{%f/%m/%y} %D{%L:%M:%S}] '$PROMPT
+alias vim="nvim"
+alias vi="nvim"
+alias ovim="\vim"
 
 export EDITOR='vi'
 
