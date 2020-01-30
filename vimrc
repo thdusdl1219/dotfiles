@@ -26,11 +26,19 @@ Plug 'bling/vim-bufferline'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale' " not sure if it's necessary.
 
+" with tmux
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'roxma/vim-tmux-clipboard'
+
+" undo tree
+Plug 'simnalamburt/vim-mundo'
 
 " snippet plugin
 "" Plug 'SirVer/ultisnips'
 
+" git
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -47,6 +55,14 @@ source ~/.vim/config/NERDTree.vim
 
 " CoC setting
 source ~/.vim/config/CoC.vim
+
+" undo tree setting 
+set undofile
+set undodir=~/.vim/undo
+nnoremap <F5> :MundoToggle<CR>
+let g:mundo_width = 30
+let g:mundo_preview_height = 40
+let g:mundo_right = 1
 
 " Using mouse
 set mouse=a
