@@ -24,6 +24,13 @@ Plug 'bling/vim-bufferline'
 
 " CoC / autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dense-analysis/ale' " not sure if it's necessary.
+
+Plug 'christoomey/vim-tmux-navigator'
+
+" snippet plugin
+"" Plug 'SirVer/ultisnips'
+
 
 call plug#end()
 
@@ -31,6 +38,9 @@ call plug#end()
 set rtp+=~/.fzf
 nnoremap <C-g> :Rg<Cr>
 nnoremap <C-f> :FZF<Cr>
+
+" `gf` opens file under cursor in a new vertical split
+nnoremap gf :vertical wincmd f<CR>
 
 " NERDTree setting
 source ~/.vim/config/NERDTree.vim
@@ -46,6 +56,14 @@ let g:airline_theme='luna'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+set nu
 
 " buffer switching
 

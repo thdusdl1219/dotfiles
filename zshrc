@@ -156,6 +156,7 @@ PROMPT='%{$fg[yellow]%}[%D{%f/%m/%y} %D{%L:%M:%S}] '$PROMPT
 alias vim="nvim"
 alias vi="nvim"
 alias ovim="\vim"
+alias clr="clear"
 
 export EDITOR='vi'
 
