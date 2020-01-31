@@ -11,7 +11,7 @@ Plug 'tpope/vim-sensible'
 
 " nerdtree
 Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
 
 " fzf
 Plug '~/.fzf'
@@ -36,11 +36,33 @@ Plug 'simnalamburt/vim-mundo'
 
 " snippet plugin
 "" Plug 'SirVer/ultisnips'
+        
+" language support
+Plug 'sheerun/vim-polyglot'
 
 " git
 Plug 'tpope/vim-fugitive'
 
+Plug 'preservim/nerdcommenter' " https://github.com/preservim/nerdcommenter
+Plug 'godlygeek/tabular' " https://github.com/godlygeek/tabular
+Plug 'majutsushi/tagbar' " https://github.com/majutsushi/tagbar
+Plug 'Raimondi/delimitMate'
+
+" snippet
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+
+" theme
+Plug 'morhetz/gruvbox'
+
+" python
+"" Plug 'jmcantrell/vim-virtualenv'
+
 call plug#end()
+
+" tagbar 
+nmap <F8> :TagbarToggle<CR>
+
 
 " fzf setting
 set rtp+=~/.fzf
@@ -65,7 +87,7 @@ let g:mundo_preview_height = 40
 let g:mundo_right = 1
 
 " Using mouse
-set mouse=a
+"" set mouse=a
 
 " Airline setting
 let g:airline_theme='luna'
@@ -99,3 +121,9 @@ noremap <leader>7 7gt
 noremap <leader>8 8gt
 noremap <leader>9 9gt
 noremap <leader>0 :tablast<cr>
+
+" coc-yank
+nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
+
+" theme
+colorscheme gruvbox
