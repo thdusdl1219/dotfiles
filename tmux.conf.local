@@ -274,7 +274,7 @@ tmux_conf_copy_to_os_clipboard=false
 
 # Session is considered to be remote when we ssh into host
 if-shell 'test -n "$SSH_CLIENT"' \
-   'source-file ~/.tmux/tmux.remote.conf'
+   'source-file ~/.tmux.conf.remote'
 
 # We want to have single prefix key "C-a", usable both for local and remote session
 # we don't want to "C-a" + "a" approach either
