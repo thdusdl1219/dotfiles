@@ -45,6 +45,9 @@ case `uname` in
 	export LC_ALL=en_US.UTF-8
 	export PATH=/Users/soyeon/Library/Python/2.7/bin:$PATH
 	export PATH=/Users/soyeon/bin:/opt/local/bin:/opt/local/sbin:$PATH
+    export PATH="/usr/local/opt/llvm/bin:$PATH"
+    export LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+    export CPPFLAGS="-I/usr/local/opt/llvm/include"
 # Path to your oh-my-zsh installation.
 	export ZSH="/Users/soyeon/.antigen/bundles/robbyrussell/oh-my-zsh"
   ;;

@@ -66,6 +66,9 @@
     ~/.config/nvim:
         path: neovim
         create: true
+    ~/.tmux.conf.remote:
+        path: tmux.remote.conf
+
 
 
 - shell:

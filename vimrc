@@ -55,6 +55,9 @@ Plug 'honza/vim-snippets'
 " theme
 Plug 'morhetz/gruvbox'
 
+" move cursor to last edit
+Plug 'farmergreg/vim-lastplace'
+
 " python
 "" Plug 'jmcantrell/vim-virtualenv'
 
