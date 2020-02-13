@@ -161,6 +161,8 @@ alias vi="nvim"
 alias ovim="\vim"
 alias clr="clear"
 
+bindkey "^[a" beginning-of-line
+bindkey "^[e" end-of-line
 export EDITOR='vi'
 
 

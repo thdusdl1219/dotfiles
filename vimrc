@@ -60,6 +60,8 @@ Plug 'farmergreg/vim-lastplace'
 
 " python
 "" Plug 'jmcantrell/vim-virtualenv'
+Plug 'vim-scripts/lastpos.vim'
+
 
 call plug#end()
 
