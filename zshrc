@@ -53,7 +53,7 @@ case `uname` in
   ;;
   Linux)
     # Commands for Linux go here
-	export PATH=/home/soyeon/bin:$PATH
+	export PATH=/snap/bin:/home/soyeon/bin:$PATH
 	export LD_LIBRARY_PATH=/home/soyeon/z3/build:$LD_LIBRARY_PATH
 	export PYTHONPATH=/home/soyeon/z3/build/python:$PATHONPATH
 	export ZSH="/home/soyeon/.antigen/bundles/robbyrussell/oh-my-zsh"
@@ -160,6 +160,7 @@ alias vim="nvim"
 alias vi="nvim"
 alias ovim="\vim"
 alias clr="clear"
+bindkey ' ' magic-space
 
 bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
