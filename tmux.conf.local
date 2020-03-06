@@ -358,6 +358,9 @@ set -g mode-keys vi
 # move status line to top
 set -g status-position top
 
+# permanently rename
+set-option -g allow-rename off
+
 # List of plugins
 set -g @tpm_plugins '          \
    tmux-plugins/tpm             \
