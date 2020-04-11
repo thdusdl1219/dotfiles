@@ -144,6 +144,7 @@ let g:coc_snippet_next = '<tab>'
 let g:coc_global_extensions = [
       \'coc-yank',
       \'coc-python',
+      \'coc-java',
       \'coc-tsserver',
       \'coc-json', 
       \'coc-lists', 
