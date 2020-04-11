@@ -10,6 +10,10 @@
                     "directory": "/tmp/ccls"
                 }
             }
+        },
+        "digestif": {
+            "command": "digestif",
+            "filetypes": ["tex", "plaintex", "context"]
         }
     },
     "suggest.enablePreview": true 

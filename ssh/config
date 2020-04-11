@@ -18,6 +18,12 @@ Host computron
 Host allspark 
 	HostName allspark.gtisc.gatech.edu
 
+Host octane
+	HostName octane.gtisc.gatech.edu
+
+Host cerebros
+    HostName cerebros.gtisc.gatech.edu
+
 Host fuzz1
   HostName iron.gtisc.gatech.edu
 
