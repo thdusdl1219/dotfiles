@@ -160,6 +160,8 @@ alias vim="nvim"
 alias vi="nvim"
 alias ovim="\vim"
 alias clr="clear"
+alias ls="exa"
+
 bindkey ' ' magic-space
 
 bindkey "^[a" beginning-of-line
