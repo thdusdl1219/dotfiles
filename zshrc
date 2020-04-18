@@ -153,7 +153,6 @@ source $ZSH/oh-my-zsh.sh
 
 alias vu=/usr/bin/vi
 alias v=/usr/bin/vi
-alias gdb=pwndbg
 alias wttr="curl wttr.in/Atlanta\?m"
 PROMPT='%{$fg[yellow]%}[%D{%f/%m/%y} %D{%L:%M:%S}] '$PROMPT
 alias vim="nvim"
@@ -173,3 +172,6 @@ export EDITOR='vi'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export PATH=/home/soyeon/tmp/jdk-11.0.6+10/bin:$PATH
+
