@@ -1,6 +1,12 @@
 Host advos
 	HostName bombshell.gtisc.gatech.edu
 
+Host portmap
+    HostName 52.151.31.111
+
+Host mount
+    HostName 52.246.251.180 
+
 Host seclab
 	HostName computron.gtisc.gatech.edu
   User  spark720
