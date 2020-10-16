@@ -1,6 +1,9 @@
 Host advos
 	HostName bombshell.gtisc.gatech.edu
 
+Host koo 
+	HostName koo.gtisc.gatech.edu
+
 Host seclab
 	HostName computron.gtisc.gatech.edu
   User  spark720
