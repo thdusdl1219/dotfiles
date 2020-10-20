@@ -174,4 +174,5 @@ export EDITOR='vi'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH=/home/soyeon/tmp/jdk-11.0.6+10/bin:$PATH
+export PATH="$PATH:/snap/bin"
 
