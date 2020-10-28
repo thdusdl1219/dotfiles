@@ -39,4 +39,3 @@ call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
-

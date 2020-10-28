@@ -54,14 +54,19 @@ Plug 'honza/vim-snippets'
 
 " theme
 Plug 'morhetz/gruvbox'
+Plug 'nightsense/vimspectr'
+Plug 'nightsense/snow'
 
 " move cursor to last edit
 Plug 'farmergreg/vim-lastplace'
+Plug 'vim-scripts/lastpos.vim'
 
 " python
 "" Plug 'jmcantrell/vim-virtualenv'
-Plug 'vim-scripts/lastpos.vim'
+Plug 'aserebryakov/vim-todo-lists'
 
+" match (%) upgrade
+Plug 'https://github.com/adelarsq/vim-matchit'
 
 call plug#end()
 
@@ -95,7 +100,7 @@ let g:mundo_right = 1
 "" set mouse=a
 
 " Airline setting
-let g:airline_theme='luna'
+let g:airline_theme='fruit_punch'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
@@ -131,5 +136,15 @@ noremap <leader>0 :tablast<cr>
 nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
 
 " theme
-colorscheme gruvbox
-set bg=dark
+"colorscheme gruvbox 
+"set bg=dark
+if strftime('%H') >= 7 && strftime('%H') < 17
+  set background=light
+else
+  set background=dark
+endif
+colorscheme snow
+
+
+" NERDTree
+let g:NERDTreeHijackNetrw=0
