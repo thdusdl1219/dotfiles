@@ -54,8 +54,8 @@ Plug 'honza/vim-snippets'
 
 " theme
 Plug 'morhetz/gruvbox'
-Plug 'nightsense/vimspectr'
-Plug 'nightsense/snow'
+Plug 'tomasiser/vim-code-dark'
+
 
 " move cursor to last edit
 Plug 'farmergreg/vim-lastplace'
@@ -100,7 +100,7 @@ let g:mundo_right = 1
 "" set mouse=a
 
 " Airline setting
-let g:airline_theme='fruit_punch'
+let g:airline_theme='codedark'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
@@ -143,7 +143,7 @@ if strftime('%H') >= 7 && strftime('%H') < 17
 else
   set background=dark
 endif
-colorscheme snow
+colorscheme gruvbox
 
 
 " NERDTree
