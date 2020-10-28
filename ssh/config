@@ -27,17 +27,17 @@ Host octane
 Host cerebros
     HostName cerebros.gtisc.gatech.edu
 
-Host fuzz1
+Host iron
   HostName iron.gtisc.gatech.edu
 
-Host fuzz2
+Host manganese
+  HostName manganese.gtisc.gatech.edu
+
+Host zinc 
+  HostName zinc.gtisc.gatech.edu
+
+Host tellurium 
   HostName tellurium.gtisc.gatech.edu
-
-Host fuzz3
-  HostName cutthroat.gtisc.gatech.edu
-
-Host fuzz4
-  HostName pounce.gtisc.gatech.edu
 
 Host fuzz5
   HostName 143.215.207.87

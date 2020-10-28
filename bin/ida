@@ -22,9 +22,9 @@ def log(s, color = None, on_color = None, attrs = None, new_line = True):
     sys.stderr.flush()
 
 IDA_PATH = None
-guess_path = ['/home/soyeon/ida-6.9'] 
+guess_path = ['/home/soyeon/ida-6.9', '/Applications/IDA Pro 7.0/ida.app/Contents/MacOS'] 
 for p in guess_path:
-    if os.path.exists(p) and p.lower().find('ida') > -1 and os.path.exists(os.path.join(p, 'idaq')):
+    if os.path.exists(p) and p.lower().find('ida') > -1 and os.path.exists(os.path.join(p, 'ida')):
         IDA_PATH = p
         break
 
@@ -39,7 +39,7 @@ if len(sys.argv) <= 1 or not os.path.exists(sys.argv[1]):
     sys.exit(10)
 
 target = sys.argv[1]
-ida = 'idaq'
+ida = 'ida'
 
 if target.endswith('.i64'):
     ida += "64"
