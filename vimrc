@@ -55,6 +55,7 @@ Plug 'honza/vim-snippets'
 " theme
 Plug 'morhetz/gruvbox'
 Plug 'tomasiser/vim-code-dark'
+Plug 'nightsense/snow'
 
 
 " move cursor to last edit
@@ -101,24 +102,29 @@ let g:mundo_right = 1
 
 " Airline setting
 let g:airline_theme='codedark'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#enabled = 1              " vim-airline 버퍼 목록 켜기
+let g:airline#extensions#tabline#fnamemod = ':t'          " vim-airline 버퍼 목록 파일명만 출력
+let g:airline#extensions#tabline#buffer_nr_show = 1       " buffer number를 보여준다
+let g:airline#extensions#tabline#buffer_nr_format = '%s:' " buffer number format
 
 filetype plugin indent on
 " show existing tab with 4 spaces width
-set tabstop=4
+set tabstop=2
 " when indenting with '>', use 4 spaces width
-set shiftwidth=4
+set shiftwidth=2
 " On pressing tab, insert 4 spaces
 set expandtab
 set nu
 
 " buffer switching
+set hidden
 
 nmap <leader>l :bnext<CR>
 nmap <leader>h :bprevious<CR>
 nmap <leader>t :enew<cr>
 nmap <leader>q :bp <BAR> bd #<CR>
+nmap <leader>bl :ls<CR>
+
 
 " Go to tab by number
 noremap <leader>1 1gt
@@ -139,11 +145,11 @@ nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
 "colorscheme gruvbox 
 "set bg=dark
 if strftime('%H') >= 7 && strftime('%H') < 17
-  set background=light
+  set background=dark
 else
   set background=dark
 endif
-colorscheme gruvbox
+colorscheme snow
 
 
 " NERDTree

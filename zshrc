@@ -21,6 +21,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle supercrabtree/k
 antigen bundle clvv/fasd
+antigen bundle marlonrichert/zsh-autocomplete
 
 # Do OS dependant stuff
 case `uname` in
@@ -175,4 +176,7 @@ export EDITOR='vi'
 
 export PATH=/home/soyeon/tmp/jdk-11.0.6+10/bin:$PATH
 export PATH="$PATH:/snap/bin"
+
+# autosuggestions color
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
 
