@@ -13,6 +13,7 @@ source ~/.dotfiles/zsh/antigen.zsh
 # antigen
 antigen use oh-my-zsh
 antigen bundle git
+antigen bundle marlonrichert/zsh-autocomplete
 antigen bundle command-not-found
 antigen bundle andrewferrier/fzf-z
 antigen bundle changyuheng/zsh-interactive-cd
@@ -20,8 +21,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle supercrabtree/k
-antigen bundle clvv/fasd
-antigen bundle marlonrichert/zsh-autocomplete
+#antigen bundle clvv/fasd
 
 # Do OS dependant stuff
 case `uname` in

@@ -14,7 +14,6 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 
 " fzf
-Plug '~/.fzf'
 Plug 'junegunn/fzf.vim'
 
 " statusline / tabline / bufferline
