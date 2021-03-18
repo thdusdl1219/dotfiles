@@ -1,10 +1,10 @@
 " NERDTree setting
 " Automatic loading
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 " if every buffer is closed, close NerdTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " change buffer focus instead of NerdTree when open it
-autocmd! VimEnter * NERDTree | wincmd w
+" autocmd! VimEnter * NERDTree | wincmd w
 
 
 nnoremap <silent> <special> <C-n> :NERDTreeToggle <Bar> if &filetype ==# 'nerdtree' <Bar> wincmd p <Bar> endif<CR>

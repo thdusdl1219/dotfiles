@@ -149,6 +149,7 @@ let g:coc_global_extensions = [
       \'coc-snippets', 
       \'coc-yaml', 
       \'coc-clangd', 
+      \'coc-browser', 
       \]
 
 let g:UltiSnipsExpandTrigger = "<nop>"

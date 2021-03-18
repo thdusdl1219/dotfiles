@@ -13,7 +13,7 @@ source ~/.dotfiles/zsh/antigen.zsh
 # antigen
 antigen use oh-my-zsh
 antigen bundle git
-antigen bundle marlonrichert/zsh-autocomplete
+#antigen bundle marlonrichert/zsh-autocomplete
 antigen bundle command-not-found
 antigen bundle andrewferrier/fzf-z
 antigen bundle changyuheng/zsh-interactive-cd
