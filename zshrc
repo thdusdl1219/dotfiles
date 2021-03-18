@@ -21,7 +21,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle supercrabtree/k
-#antigen bundle clvv/fasd
+antigen bundle clvv/fasd
 
 # Do OS dependant stuff
 case `uname` in

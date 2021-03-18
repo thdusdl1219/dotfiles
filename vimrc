@@ -68,6 +68,8 @@ Plug 'aserebryakov/vim-todo-lists'
 " match (%) upgrade
 Plug 'https://github.com/adelarsq/vim-matchit'
 
+Plug 'zenbro/mirror.vim'
+
 call plug#end()
 
 " tagbar 

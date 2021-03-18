@@ -1,6 +1,11 @@
 - clean: ['~']
 
 - link:
+    ~/.mirrors:
+        path: mirrors
+        create: false
+        relink: false
+        force: false
     ~/.profile:
         path: profile
         create: false
