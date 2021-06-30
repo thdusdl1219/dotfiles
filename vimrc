@@ -62,7 +62,7 @@ Plug 'farmergreg/vim-lastplace'
 Plug 'vim-scripts/lastpos.vim'
 
 " python
-"" Plug 'jmcantrell/vim-virtualenv'
+"" Plug 'jmcantrell/vim-virtualenv', { 'for': 'python'}
 Plug 'aserebryakov/vim-todo-lists'
 
 " match (%) upgrade
@@ -155,3 +155,10 @@ colorscheme snow
 
 " NERDTree
 let g:NERDTreeHijackNetrw=0
+
+" ALE
+nmap <F8> <Plug>(ale_fix)
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'python': ['autopep8', 'autoimport', 'add_blank_lines_for_python_control_statements'],
+\}
