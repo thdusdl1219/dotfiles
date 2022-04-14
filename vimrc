@@ -75,6 +75,8 @@ call plug#end()
 " tagbar 
 nmap <F8> :TagbarToggle<CR>
 
+nmap <F9> :MirrorEdit<CR>
+nmap <F10> :MirrorPush<CR>
 
 " fzf setting
 set rtp+=~/.fzf

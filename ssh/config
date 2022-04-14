@@ -52,3 +52,12 @@ Host woo
   HostName 192.168.1.3 
 Host vm 
   HostName 192.168.231.141 
+
+Host gl.gtisc.gatech.edu
+  HostName gl.gtisc.gatech.edu
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes
+
+Host skyfire
+  HostName skyfire.gtisc.gatech.edu
+  ForwardAgent yes

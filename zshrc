@@ -27,7 +27,7 @@ antigen bundle clvv/fasd
 case `uname` in
   Darwin)
     # Commands for OS X go here
-    antigen bundle osx
+    antigen bundle macos 
   ;;
   Linux)
     # Commands for Linux go here

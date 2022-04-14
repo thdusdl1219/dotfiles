@@ -7,3 +7,5 @@
 	st = status
 	ci = commit
 	dc = diff --cached
+[core]
+	editor = nvim
