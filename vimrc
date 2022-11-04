@@ -54,7 +54,7 @@ Plug 'honza/vim-snippets'
 " theme
 Plug 'morhetz/gruvbox'
 Plug 'tomasiser/vim-code-dark'
-Plug 'nightsense/snow'
+Plug 'sainnhe/everforest'
 
 
 " move cursor to last edit
@@ -152,7 +152,7 @@ if strftime('%H') >= 7 && strftime('%H') < 17
 else
   set background=dark
 endif
-colorscheme snow
+colorscheme everforest
 
 
 " NERDTree
