@@ -31,6 +31,7 @@ case `uname` in
   Darwin)
     # Commands for OS X go here
     antigen bundle macos 
+eval "$(/usr/libexec/path_helper)"
   ;;
   Linux)
     # Commands for Linux go here
@@ -202,7 +203,6 @@ export WLLVM_OUTPUT_FILE=/home/soyeon/wrapper.log
 export PATH=$LLVM_HOME/bin:$PATH
 PATH=~/vuln-genome/tools/retdec/retdec/bin:~/.pyenv/plugins/pyenv-virtualenv/shims:~/.pyenv/shims:~/.pyenv/bin:~/tmp/jdk-11.0.6+10/bin:/snap/bin:~/bin:~/.pyenv/plugins/pyenv-virtualenv/shims:~/.pyenv/shims:~/.pyenv/bin:~/tmp/jdk-11.0.6+10/bin:/snap/bin:~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:~/.antigen/bundles/robbyrussell/oh-my-zsh/lib:~/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/git:~/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/command-not-found:~/.antigen/bundles/andrewferrier/fzf-z:~/.antigen/bundles/changyuheng/zsh-interactive-cd:~/.antigen/bundles/zsh-users/zsh-syntax-highlighting:~/.antigen/bundles/zsh-users/zsh-autosuggestions:~/.antigen/bundles/zsh-users/zsh-history-substring-search:~/.antigen/bundles/supercrabtree/k:~/.antigen/bundles/clvv/fasd:~/.antigen/bundles/romkatv/powerlevel10k:~/.fzf/bin:/snap/bin
 eval "$(pyenv init -)"
-eval "$(/usr/libexec/path_helper)"
 alias grammarly="open -a 'Grammarly Desktop'"
 
 # Make sure to restart your entire logon session
