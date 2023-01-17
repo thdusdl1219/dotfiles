@@ -385,3 +385,6 @@ set -g @open-S 'https://www.google.com.au/search?q='
  # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run -b '~/.tmux/plugins/tpm/tpm'
 
+# for coc checkhealth
+set-option -sg escape-time 10
+set-option -g focus-events on

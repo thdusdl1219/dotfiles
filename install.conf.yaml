@@ -6,6 +6,11 @@
         create: false
         relink: false
         force: false
+    ~/.ssh/rc:
+        path: sshrc
+        create: false
+        relink: false
+        force: false
     ~/.profile:
         path: profile
         create: false
