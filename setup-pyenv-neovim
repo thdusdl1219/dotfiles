@@ -1,0 +1,6 @@
+zsh
+source zshrc
+pyenv virtualenv neovim
+pyenv activate neovim
+pip install neovim
+

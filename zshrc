@@ -1,4 +1,3 @@
-source =fasd
 zmodload zsh/zprof
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -230,7 +229,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # for skyfire
 HOSTNAME=$(hostname)
-if [ ${HOSTNAME} == "skyfire"]; then
+if [[ ${HOSTNAME} == "skyfire" ]]; then
   export LD_LIBRARY_PATH=/home/soyeon/.rustup/toolchains/nightly-2022-08-01-x86_64-unknown-linux-gnu/lib:$LD_LIBRARY_PATH
   export RANLZ_REDIS_HOSTNAME=127.0.0.1:5252
 fi
