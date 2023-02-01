@@ -60,4 +60,9 @@ Host gl.gtisc.gatech.edu
 
 Host skyfire
   HostName skyfire.gtisc.gatech.edu
+
+Host snarl
+  HostName snarl.gtisc.gatech.edu
+
+Host *
   ForwardAgent yes
