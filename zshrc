@@ -119,12 +119,14 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+export NVM_LAZY=1
+
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fasd command-not-found)
+plugins=(git fasd command-not-found nvm)
 
 
 source $ZSH/oh-my-zsh.sh
@@ -220,9 +222,6 @@ export WLLVM_OUTPUT_FILE=/home/soyeon/wrapper.log
 export PATH=$LLVM_HOME/bin:$PATH
 PATH=/home/soyeon/vuln-genome/tools/retdec/retdec/bin:/home/soyeon/.pyenv/plugins/pyenv-virtualenv/shims:/home/soyeon/.pyenv/shims:/home/soyeon/.pyenv/bin:/home/soyeon/tmp/jdk-11.0.6+10/bin:/snap/bin:/home/soyeon/bin:/home/soyeon/.pyenv/plugins/pyenv-virtualenv/shims:/home/soyeon/.pyenv/shims:/home/soyeon/.pyenv/bin:/home/soyeon/tmp/jdk-11.0.6+10/bin:/snap/bin:/home/soyeon/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/soyeon/.antigen/bundles/robbyrussell/oh-my-zsh/lib:/home/soyeon/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/git:/home/soyeon/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/command-not-found:/home/soyeon/.antigen/bundles/andrewferrier/fzf-z:/home/soyeon/.antigen/bundles/changyuheng/zsh-interactive-cd:/home/soyeon/.antigen/bundles/zsh-users/zsh-syntax-highlighting:/home/soyeon/.antigen/bundles/zsh-users/zsh-autosuggestions:/home/soyeon/.antigen/bundles/zsh-users/zsh-history-substring-search:/home/soyeon/.antigen/bundles/supercrabtree/k:/home/soyeon/.antigen/bundles/clvv/fasd:/home/soyeon/.antigen/bundles/romkatv/powerlevel10k:/home/soyeon/.fzf/bin:/snap/bin
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH=$HOME/.cargo/bin:$PATH
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
@@ -230,6 +229,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # for skyfire
 HOSTNAME=$(hostname)
 if [[ ${HOSTNAME} == "skyfire" ]]; then
-  export LD_LIBRARY_PATH=/home/soyeon/.rustup/toolchains/nightly-2022-08-01-x86_64-unknown-linux-gnu/lib:$LD_LIBRARY_PATH
+  export RUST_SYSROOT=/home/soyeon/.rustup/toolchains/nightly-2022-08-01-x86_64-unknown-linux-gnu
+  export LD_LIBRARY_PATH=$RUST_SYSROOT/lib:$LD_LIBRARY_PATH
   export RANLZ_REDIS_HOSTNAME=127.0.0.1:5252
 fi
