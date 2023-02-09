@@ -1,6 +1,6 @@
 # This is Git's per-user configuration file.
 [user]
-    name = Soyeon Park
+  name = Soyeon Park
 	email = spark720@gatech.edu
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
@@ -9,6 +9,7 @@
 	dc = diff --cached
 [core]
 	editor = nvim
+	pager = "bat --style=plain"
 [safe]
 	directory = /home/soyeon/actions-runner/_work/TestImport/TestImport
 	directory = /home/soyeon/actions-runner/_work/TestImport/TestImport
