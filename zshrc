@@ -29,7 +29,9 @@ source <(curl -sL init.zshell.dev); zzinit
  zi light z-shell/z-a-meta-plugins
 
  #zi snippet PZT::modules/helper/init.zsh
- zi light-mode for @romkatv @z-shell @fuzzy @py-utils @prezto @console-tools @ext-git
+ zi light-mode for @annexes @romkatv \
+   @z-shell @fuzzy @py-utils @console-tools @ext-git #@prezto
+
 
 
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
