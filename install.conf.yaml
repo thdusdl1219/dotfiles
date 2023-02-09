@@ -1,9 +1,14 @@
 - clean: ['~']
 
-- shell
+- shell:
         - [curl https://pyenv.run | bash]
 
 - link:
+    ~/.env.zsh:
+        path: env.zsh
+        create: false
+        relink: false
+        force: false
     ~/.mirrors:
         path: mirrors
         create: false
