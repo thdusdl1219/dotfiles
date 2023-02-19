@@ -9,29 +9,40 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-
-# source ZPlug
-# source ~/.zplug/init.zsh
 source <(curl -sL init.zshell.dev); zzinit
 
-# antigen
-# antigen use oh-my-zsh
- # antigen bundle git
-##antigen bundle marlonrichert/zsh-autocomplete
- # antigen bundle command-not-found
  # zi load andrewferrier/fzf-z
  zi load changyuheng/zsh-interactive-cd
- zi load z-shell/H-S-MW
  zi load supercrabtree/k
  zi load clvv/fasd
+ zi load agkozak/zsh-z
+
+
+# zi ice lucid wait'0'
+# zi light joshskidmore/zsh-fzf-history-search
+
+ zi ice lucid wait has'fzf'
+ zi light Aloxaf/fzf-tab
 
  zi light zsh-users/zsh-autosuggestions
  zi light z-shell/z-a-meta-plugins
 
  #zi snippet PZT::modules/helper/init.zsh
  zi light-mode for @annexes @romkatv \
-   @z-shell @fuzzy @py-utils @ext-git @console-tools
+    @fuzzy @py-utils @ext-git @console-tools @z-shell
 
+# https://wiki.zshell.dev/ecosystem/plugins/h-s-mw
+setopt extended_history       # record timestamp of command in HISTFILE
+setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
+setopt hist_ignore_all_dups   # remove older duplicate entries from the history
+setopt hist_ignore_dups       # ignore duplicated commands history list
+setopt hist_reduce_blanks     # remove superfluous blanks from history items
+setopt hist_save_no_dups      # do not write a duplicate event to the history file
+setopt share_history          # share command history data
+
+HISTFILE=~/.zsh_history
+HISTSIZE=10000000
+#SAVEHIST=10000000
 
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
