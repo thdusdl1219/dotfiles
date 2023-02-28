@@ -13,6 +13,14 @@ source <(curl -sL init.zshell.dev); zzinit
 
  # zi load andrewferrier/fzf-z
  zi load changyuheng/zsh-interactive-cd
+# antigen
+# antigen use oh-my-zsh
+ # antigen bundle git
+##antigen bundle marlonrichert/zsh-autocomplete
+ # antigen bundle command-not-found
+ zi load andrewferrier/fzf-z
+ # zi load changyuheng/zsh-interactive-cd
+ zi load z-shell/H-S-MW
  zi load supercrabtree/k
  zi load clvv/fasd
  zi load agkozak/zsh-z
@@ -26,8 +34,9 @@ source <(curl -sL init.zshell.dev); zzinit
 
  zi light zsh-users/zsh-autosuggestions
  zi light z-shell/z-a-meta-plugins
+ zi light Aloxaf/fzf-tab
+ zi light ael-code/zsh-plugin-fasd-fzf
 
- #zi snippet PZT::modules/helper/init.zsh
  zi light-mode for @annexes @romkatv \
     @fuzzy @py-utils @ext-git @console-tools @z-shell
 
