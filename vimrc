@@ -9,6 +9,9 @@ endif
 call plug#begin()
 Plug 'tpope/vim-sensible'
 
+" vim session management
+Plug 'tpope/vim-obsession'
+
 " nerdtree
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
