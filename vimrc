@@ -27,8 +27,8 @@ Plug 'dense-analysis/ale' " not sure if it's necessary.
 
 " with tmux
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'tmux-plugins/vim-tmux-focus-events'
-Plug 'roxma/vim-tmux-clipboard'
+" Plug 'tmux-plugins/vim-tmux-focus-events'
+" Plug 'roxma/vim-tmux-clipboard'
 
 " undo tree
 Plug 'simnalamburt/vim-mundo'
@@ -40,7 +40,7 @@ Plug 'simnalamburt/vim-mundo'
 Plug 'sheerun/vim-polyglot'
 
 " git
-Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-fugitive'
 
 Plug 'preservim/nerdcommenter' " https://github.com/preservim/nerdcommenter
 Plug 'godlygeek/tabular' " https://github.com/godlygeek/tabular
