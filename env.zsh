@@ -52,8 +52,8 @@ if [[ ${HOSTNAME} == "skyfire" ]]; then
   export RANLZ_REDIS_HOSTNAME=127.0.0.1:5252
 fi
 
-alias vu=/usr/bin/vi
-alias v=/usr/bin/vi
+alias vu="nvim"
+alias v="nvim"
 alias wttr="curl wttr.in/Atlanta\?m"
 PROMPT='%{$fg[yellow]%}[%D{%f/%m/%y} %D{%L:%M:%S}] '$PROMPT
 alias vim="nvim"
@@ -61,3 +61,6 @@ alias vi="nvim"
 alias ovim="\vim"
 alias clr="clear"
 alias ls="exa"
+alias g="git"
+alias t="tig"
+

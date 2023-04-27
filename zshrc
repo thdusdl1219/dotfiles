@@ -29,13 +29,11 @@ source <(curl -sL init.zshell.dev); zzinit
 # zi ice lucid wait'0'
 # zi light joshskidmore/zsh-fzf-history-search
 
- zi ice lucid wait has'fzf'
- zi light Aloxaf/fzf-tab
-
  zi light zsh-users/zsh-autosuggestions
  zi light z-shell/z-a-meta-plugins
  zi light Aloxaf/fzf-tab
  zi light ael-code/zsh-plugin-fasd-fzf
+ zi snippet OMZP::fzf
 
  zi light-mode for @annexes @romkatv \
     @fuzzy @py-utils @ext-git @console-tools @z-shell
