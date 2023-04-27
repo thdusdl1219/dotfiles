@@ -13,6 +13,7 @@ case `uname` in
     # Path to your oh-my-zsh installation.
     # export ZSH="/Users/soyeon/.antigen/bundles/robbyrussell/oh-my-zsh"
     test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+    #alias drawio="/Applications/draw.io.app/Contents/MacOS/draw.io"
     ;;
   Linux)
     # Commands for Linux go here

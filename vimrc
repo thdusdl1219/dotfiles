@@ -13,8 +13,8 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-obsession'
 
 " nerdtree
-Plug 'preservim/nerdtree'
-Plug 'ryanoasis/vim-devicons'
+" Plug 'preservim/nerdtree'
+" Plug 'ryanoasis/vim-devicons'
 
 " fzf
 Plug 'junegunn/fzf.vim'
@@ -26,7 +26,7 @@ Plug 'bling/vim-bufferline'
 
 " CoC / autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'dense-analysis/ale' " not sure if it's necessary.
+" Plug 'dense-analysis/ale' " not sure if it's necessary.
 
 " with tmux
 Plug 'christoomey/vim-tmux-navigator'
