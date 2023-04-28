@@ -455,5 +455,5 @@ set -g @plugin 'tmux-plugins/tmux-pain-control'
 # tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized}#{?battery_status,#{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , #{online} , #{weather} , %R , %d %b | #{username}#{root} | #{hostname} "
 tmux_conf_theme_status_right=" %R , %d %b | #{username}#{root} | #{hostname} "
 
-# if-shell 'test -n "$SSH_CLIENT"' \
-#     'source-file ~/.tmux.conf.remote'
+# # if-shell 'test -n "$SSH_CLIENT"' \
+# #     'source-file ~/.tmux.conf.remote'
