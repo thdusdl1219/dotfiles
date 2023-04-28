@@ -11,14 +11,7 @@ fi
 
 source <(curl -sL init.zshell.dev); zzinit
 
- # zi load andrewferrier/fzf-z
  zi load changyuheng/zsh-interactive-cd
-# antigen
-# antigen use oh-my-zsh
- # antigen bundle git
-##antigen bundle marlonrichert/zsh-autocomplete
- # antigen bundle command-not-found
- zi load andrewferrier/fzf-z
  # zi load changyuheng/zsh-interactive-cd
  zi load z-shell/H-S-MW
  zi load supercrabtree/k
@@ -27,16 +20,22 @@ source <(curl -sL init.zshell.dev); zzinit
 
 
 # zi ice lucid wait'0'
-# zi light joshskidmore/zsh-fzf-history-search
 
  zi light zsh-users/zsh-autosuggestions
  zi light z-shell/z-a-meta-plugins
+
+ zi pack"binary" for fzf
+ 
+ zi ice lucid wait has'fzf'
  zi light Aloxaf/fzf-tab
+ zi load andrewferrier/fzf-z
+ zi light joshskidmore/zsh-fzf-history-search
  zi light ael-code/zsh-plugin-fasd-fzf
  zi snippet OMZP::fzf
 
  zi light-mode for @annexes @romkatv \
-    @fuzzy @py-utils @ext-git @console-tools @z-shell
+    @fuzzy \
+    @py-utils @ext-git @console-tools @z-shell
 
 # https://wiki.zshell.dev/ecosystem/plugins/h-s-mw
 setopt extended_history       # record timestamp of command in HISTFILE
