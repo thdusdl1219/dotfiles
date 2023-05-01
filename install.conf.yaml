@@ -4,6 +4,9 @@
         - [curl https://pyenv.run | bash]
 
 - link:
+    ~/.fzf:
+        path: fzf
+        create: true
     ~/.env.zsh:
         path: env.zsh
         create: false
