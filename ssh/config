@@ -15,6 +15,9 @@ Host defcon
 Host mpk
 	HostName mindwipe.gtisc.gatech.edu
 
+Host ravage
+	HostName ravage.gtisc.gatech.edu
+
 Host computron
 	HostName computron.gtisc.gatech.edu
 
