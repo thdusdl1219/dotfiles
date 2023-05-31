@@ -8,6 +8,7 @@
 	c = commit
 	d = diff
 	dc = diff --cached
+	p = push
 [core]
 	editor = nvim
 	pager = "bat --style=plain"
