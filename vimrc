@@ -1,3 +1,4 @@
+" TODO: replace init.vim to init.lua
 " auto-download for vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -10,7 +11,7 @@ call plug#begin()
 Plug 'tpope/vim-sensible'
 
 " vim session management
-Plug 'tpope/vim-obsession'
+" Plug 'tpope/vim-obsession'
 
 " nerdtree
 " Plug 'preservim/nerdtree'
@@ -30,8 +31,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " with tmux
 Plug 'christoomey/vim-tmux-navigator'
-" Plug 'tmux-plugins/vim-tmux-focus-events'
-" Plug 'roxma/vim-tmux-clipboard'
 
 " undo tree
 Plug 'simnalamburt/vim-mundo'
@@ -92,7 +91,8 @@ nnoremap gf :vertical wincmd f<CR>
 " NERDTree setting
 source ~/.vim/config/NERDTree.vim
 
-" CoC setting
+" CoC setting # Plugins 
+" Other settings are located in ~/.config/nvim/lua/CoC.lua
 source ~/.vim/config/CoC.vim
 
 " undo tree setting 
