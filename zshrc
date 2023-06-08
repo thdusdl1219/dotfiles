@@ -35,7 +35,7 @@ source <(curl -sL init.zshell.dev); zzinit
 
  zi light-mode for @annexes @romkatv \
     @fuzzy \
-    @py-utils @ext-git @console-tools @z-shell
+    @ext-git @console-tools @z-shell
 
 # https://wiki.zshell.dev/ecosystem/plugins/h-s-mw
 setopt extended_history       # record timestamp of command in HISTFILE
