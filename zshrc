@@ -14,6 +14,8 @@ source <(curl -sL init.zshell.dev); zzinit
  zi load changyuheng/zsh-interactive-cd
  # zi load changyuheng/zsh-interactive-cd
  zi load z-shell/H-S-MW
+zstyle :plugin:history-search-multi-word reset-prompt-protect 1
+zstyle ":history-search-multi-word" page-size "8"
  zi load supercrabtree/k
  zi load clvv/fasd
  zi load agkozak/zsh-z
@@ -48,7 +50,8 @@ setopt share_history          # share command history data
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000000
-#SAVEHIST=10000000
+SAVEHIST=10000000
+setopt appendhistory
 
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
