@@ -1,17 +1,3 @@
-Host advos
-	HostName bombshell.gtisc.gatech.edu
-
-Host koo 
-	HostName koo.gtisc.gatech.edu
-
-Host seclab
-	HostName computron.gtisc.gatech.edu
-  User  spark720
-  Port  2022
-
-Host defcon
-  HostName 172.16.88.128
-
 Host mpk
 	HostName mindwipe.gtisc.gatech.edu
 
@@ -42,31 +28,27 @@ Host zinc
 Host tellurium 
   HostName tellurium.gtisc.gatech.edu
 
-Host fuzz5
-  HostName 143.215.207.87
-
-Host fuzz6
-  HostName 143.215.206.122
-
-Host gt
-	HostName soyeon.gtisc.gatech.edu
-	User soyeon
-Host woo 
-  HostName 192.168.1.3 
-Host vm 
-  HostName 192.168.231.141 
-
-Host gl.gtisc.gatech.edu
-  HostName gl.gtisc.gatech.edu
-  #IdentityFile ~/.ssh/id_rsa
-  #IdentitiesOnly yes
-
 Host skyfire
   HostName skyfire.gtisc.gatech.edu
 
 Host snarl
   HostName snarl.gtisc.gatech.edu
 
+Host gt
+	HostName soyeon.gtisc.gatech.edu
+	User soyeon
+
+Host gl.gtisc.gatech.edu
+  HostName gl.gtisc.gatech.edu
+  #IdentityFile ~/.ssh/id_rsa
+  #IdentitiesOnly yes
+
 Host *
   ForwardAgent yes
+
+Host fcmain
+  HostName fcmain.gtisc.gatech.edu
+
+Host fcsub
+  HostName fcsub.gtisc.gatech.edu
 
