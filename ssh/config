@@ -52,3 +52,18 @@ Host fcmain
 Host fcsub
   HostName fcsub.gtisc.gatech.edu
 
+Host fc05
+  HostName fcmain.gtisc.gatech.edu
+  Port 22005
+
+Host fc06
+  HostName fcmain.gtisc.gatech.edu
+  Port 22006
+
+Host fc07
+  HostName fcmain.gtisc.gatech.edu
+  Port 22007
+
+Host fc08
+  HostName fcmain.gtisc.gatech.edu
+  Port 22008
