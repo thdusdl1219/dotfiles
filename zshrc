@@ -46,12 +46,11 @@ setopt hist_ignore_all_dups   # remove older duplicate entries from the history
 setopt hist_ignore_dups       # ignore duplicated commands history list
 setopt hist_reduce_blanks     # remove superfluous blanks from history items
 setopt hist_save_no_dups      # do not write a duplicate event to the history file
-setopt share_history          # share command history data
+setopt inc_append_history
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000000
 SAVEHIST=10000000
-setopt appendhistory
 
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
