@@ -24,16 +24,23 @@ case `uname` in
     ;;
 esac
 alias readlink=greadlink
-eval "$(pyenv init -)"
 alias grammarly="open -a 'Grammarly Desktop'"
 
-# Make sure to restart your entire logon session
-# for changes to profile files to take effect.
-
-# Load pyenv-virtualenv automatically by adding
-# the following to ~/.bashrc:
-
+# Init pyenv-virtualenv, but 
+# unload precmd hook _pyenv_virtualenv_hook
+eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# Warning: unloading the following hook breaks command
+# `pyenv activate/deactivate`. Please switch to
+# `pyenv shell env_name`, `pyenv shell --unset` instead.
+if [[ -n $ZSH_VERSION ]]; then
+  autoload -Uz add-zsh-hook
+  add-zsh-hook -D precmd _pyenv_virtualenv_hook
+fi
+if [[ -n $BASH_VERSION ]]; then
+  PROMPT_COMMAND="${PROMPT_COMMAND/_pyenv_virtualenv_hook;/}"
+fi
 
 export LLVM_HOME=/usr/lib/llvm-11
 export LLVM_COMPILER=clang
