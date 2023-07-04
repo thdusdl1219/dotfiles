@@ -10,6 +10,8 @@ endif
 call plug#begin()
 Plug 'tpope/vim-sensible'
 
+Plug 'powerman/vim-plugin-AnsiEsc'
+
 " vim session management
 " Plug 'tpope/vim-obsession'
 

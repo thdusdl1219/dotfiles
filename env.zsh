@@ -81,4 +81,5 @@ alias clr="clear"
 alias ls="exa"
 alias g="git"
 alias t="tig"
+alias pager="vim -R +AnsiEsc"
 
