@@ -33,6 +33,9 @@ Host skyfire
 
 Host snarl
   HostName snarl.gtisc.gatech.edu
+  
+Host rumble
+  HostName rumble.gtisc.gatech.edu
 
 Host gt
 	HostName soyeon.gtisc.gatech.edu
@@ -52,18 +55,32 @@ Host fcmain
 Host fcsub
   HostName fcsub.gtisc.gatech.edu
 
-Host fc05
+Host fc*
+  User sslab
+  HostName fcmain.gtisc.gatech.edu
+  IdentityFile /Users/soyeon/lab/conf/sslab/bin/../conf/fuzzfarm_id_rsa
+
+Host f05
   HostName fcmain.gtisc.gatech.edu
   Port 22005
 
 Host fc06
-  HostName fcmain.gtisc.gatech.edu
   Port 22006
 
 Host fc07
-  HostName fcmain.gtisc.gatech.edu
   Port 22007
 
 Host fc08
-  HostName fcmain.gtisc.gatech.edu
   Port 22008
+
+Host fc10
+  Port 22010
+
+Host fc15
+  Port 22015
+
+Host fc16
+  Port 22016
+
+Host fc17
+  Port 22017
