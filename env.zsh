@@ -83,3 +83,4 @@ alias g="git"
 alias t="tig"
 alias pager="vim -R +AnsiEsc"
 
+export CARGO_PROFILE_DEV_BUILD_OVERRIDE_DEBUG=true

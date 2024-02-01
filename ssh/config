@@ -1,6 +1,9 @@
 Host mpk
 	HostName mindwipe.gtisc.gatech.edu
 
+Host optimus
+	HostName optimus.gtisc.gatech.edu
+
 Host ravage
 	HostName ravage.gtisc.gatech.edu
 
@@ -84,3 +87,30 @@ Host fc16
 
 Host fc17
   Port 22017
+
+Host fc22
+  Port 22022
+
+Host fc23
+  Port 22023
+
+Host fc24
+  Port 22024
+
+Host fc25
+  Port 22025
+
+Host fc26
+  Port 22026
+
+Host fc27
+  Port 22027
+
+Host fc28
+  Port 22028
+
+Host fc29
+  Port 22029
+
+Host fc30
+  Port 22030
