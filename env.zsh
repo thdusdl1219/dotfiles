@@ -104,5 +104,4 @@ if hash nvim 2>/dev/null; then
   alias ovim="\vim"
 fi
 
-
 export CARGO_PROFILE_DEV_BUILD_OVERRIDE_DEBUG=true
