@@ -28,7 +28,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'bling/vim-bufferline'
 
 " CoC / autocomplete
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'dense-analysis/ale' " not sure if it's necessary.
 
 " with tmux
