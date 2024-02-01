@@ -70,17 +70,39 @@ if [[ ${HOSTNAME} == "ravage" ]]; then
   export RANLZ_REDIS_HOSTNAME=127.0.0.1:6379
 fi
 
-alias vu="nvim"
-alias v="nvim"
 alias wttr="curl wttr.in/Atlanta\?m"
 PROMPT='%{$fg[yellow]%}[%D{%f/%m/%y} %D{%L:%M:%S}] '$PROMPT
-alias vim="nvim"
-alias vi="nvim"
-alias ovim="\vim"
 alias clr="clear"
-alias ls="exa"
 alias g="git"
 alias t="tig"
 alias pager="vim -R +AnsiEsc"
+
+# rust based command line utilities
+# ls -> exa
+if hash exa 2>/dev/null; then
+    alias ls='exa --icons'
+    alias l='exa -l --icons --all --group-directories-first --git'
+    alias ll='exa -l --icons --all --all --group-directories-first --git'
+    alias lt='exa -T --icons --git-ignore --level=2 --group-directories-first'
+    alias llt='exa -lT --icons --git-ignore --level=2 --group-directories-first'
+    alias lT='exa -T --icons --git-ignore --level=4 --group-directories-first'
+else
+    alias l='ls -lah'
+    alias ll='ls -alF'
+    alias la='ls -A'
+fi
+# cat -> bat
+if hash bat 2>/dev/null; then
+    alias cat='bat'
+fi
+
+if hash nvim 2>/dev/null; then
+  alias vu="nvim"
+  alias v="nvim"
+  alias vim="nvim"
+  alias vi="nvim"
+  alias ovim="\vim"
+fi
+
 
 export CARGO_PROFILE_DEV_BUILD_OVERRIDE_DEBUG=true
