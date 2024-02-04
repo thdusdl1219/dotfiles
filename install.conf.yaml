@@ -52,6 +52,11 @@
         create: false
         relink: false
         force: false
+    ~/.zshenv:
+        path: zshenv
+        create: false
+        relink: false
+        force: false
     ~/bin:
         path: bin/
         create: true
