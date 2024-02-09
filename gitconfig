@@ -16,3 +16,5 @@
 [safe]
 	directory = /home/soyeon/actions-runner/_work/TestImport/TestImport
 	directory = /home/soyeon/actions-runner/_work/TestImport/TestImport
+[credential]
+	helper = store

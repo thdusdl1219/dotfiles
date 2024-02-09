@@ -33,11 +33,10 @@ if [[ ${HOSTNAME} == "skyfire" ]]; then
   export RUST_SYSROOT=/home/soyeon/.rustup/toolchains/nightly-2023-06-01-x86_64-unknown-linux-gnu
   export LD_LIBRARY_PATH=$RUST_SYSROOT/lib:$LD_LIBRARY_PATH
   export RANLZ_REDIS_HOSTNAME=127.0.0.1:5252
-fi
-if [[ ${HOSTNAME} == "ravage" ]]; then
+else
   export RUST_SYSROOT=/home/soyeon/.rustup/toolchains/nightly-2023-06-01-x86_64-unknown-linux-gnu
   export LD_LIBRARY_PATH=$RUST_SYSROOT/lib:$LD_LIBRARY_PATH
-  export RANLZ_REDIS_HOSTNAME=127.0.0.1:6379
+  export RANLZ_REDIS_HOSTNAME=:ruzzler123!@127.0.0.1:6379
 fi
 
 alias wttr="curl wttr.in/Atlanta\?m"
