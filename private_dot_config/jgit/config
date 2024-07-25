@@ -1,0 +1,3 @@
+[filesystem "OpenLogic|17.0.11|/dev/mapper/encr_sd0"]
+	timestampResolution = 15562 nanoseconds
+	minRacyThreshold = 4466 microseconds

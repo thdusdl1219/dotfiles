@@ -1,0 +1,48 @@
+Host mpk
+	HostName mindwipe.gtisc.gatech.edu
+
+Host optimus
+	HostName optimus.gtisc.gatech.edu
+
+Host ravage
+	HostName ravage.gtisc.gatech.edu
+
+Host computron
+	HostName computron.gtisc.gatech.edu
+
+Host allspark 
+	HostName allspark.gtisc.gatech.edu
+
+Host octane
+	HostName octane.gtisc.gatech.edu
+
+Host cerebros
+    HostName cerebros.gtisc.gatech.edu
+
+Host iron
+  HostName iron.gtisc.gatech.edu
+
+Host manganese
+  HostName manganese.gtisc.gatech.edu
+
+Host zinc 
+  HostName zinc.gtisc.gatech.edu
+
+Host tellurium 
+  HostName tellurium.gtisc.gatech.edu
+
+Host skyfire
+  HostName skyfire.gtisc.gatech.edu
+
+Host snarl
+  HostName snarl.gtisc.gatech.edu
+  
+Host rumble
+  HostName rumble.gtisc.gatech.edu
+
+Host gt
+	HostName soyeon.gtisc.gatech.edu
+	User soyeon
+
+Host gl.gtisc.gatech.edu
+  HostName gl.gtisc.gatech.edu

@@ -1,0 +1,12 @@
+packages:
+  darwin:
+    brews:
+    - 'zsh'
+    - 'nvim'
+    - 'node'
+  linux:
+    apt:
+    - 'zsh'
+    snap_classic:
+    - 'nvim'
+    - 'node'

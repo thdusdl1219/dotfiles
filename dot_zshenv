@@ -1,0 +1,120 @@
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+# set PATH so it includes user's private bin directories
+PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+
+case `uname` in
+  Darwin)
+    # Commands for OS X go here
+    export LANGUAGE=en_US.UTF-8
+    export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+    # llvm
+    export PATH=$PATH:/usr/local/opt/llvm/bin
+    export LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+    export CPPFLAGS="-I/usr/local/opt/llvm/include"
+    test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+    ;;
+  Linux)
+    # Commands for Linux go here
+    export PATH=$PATH:/snap/bin
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/z3/build
+    export PYTHONPATH=$PYTHONPATH:$HOME/z3/build/python
+    ;;
+esac
+
+# vuln-genome
+# export LLVM_HOME=/usr/lib/llvm-11
+# export LLVM_COMPILER=clang
+# export WLLVM_OUTPUT_LEVEL=WARNING
+# export WLLVM_OUTPUT_FILE=$PATH/wrapper.log
+# export PATH=$PATH:$LLVM_HOME/bin
+# export PATH=$PATH:$HOME/vuln-genome/tools/retdec/retdec/bin
+# export PATH=$PATH:$HOME/.pyenv/shims:$HOME/.pyenv/plugins/pyenv-virtualenv/shims:$HOME/.pyenv/shims
+# export PATH=$PATH:$HOME/tmp/jdk-11.0.6+10/bin
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.zi/polaris/bin:$PATH
+
+alias readlink=greadlink
+alias grammarly="open -a 'Grammarly Desktop'"
+
+# Init pyenv-virtualenv, but 
+# unload precmd hook _pyenv_virtualenv_hook
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# Warning: unloading the following hook breaks command
+# `pyenv activate/deactivate`. Please switch to
+# `pyenv shell env_name`, `pyenv shell --unset` instead.
+if [[ -n $ZSH_VERSION ]]; then
+  autoload -Uz add-zsh-hook
+  add-zsh-hook -D precmd _pyenv_virtualenv_hook
+fi
+if [[ -n $BASH_VERSION ]]; then
+  PROMPT_COMMAND="${PROMPT_COMMAND/_pyenv_virtualenv_hook;/}"
+fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# for skyfire
+HOSTNAME=$(hostname)
+if [[ ${HOSTNAME} == "skyfire" ]]; then
+  export RUST_SYSROOT=/home/soyeon/.rustup/toolchains/nightly-2023-06-01-x86_64-unknown-linux-gnu
+  export LD_LIBRARY_PATH=$RUST_SYSROOT/lib:$LD_LIBRARY_PATH
+  export RANLZ_REDIS_HOSTNAME=127.0.0.1:5252
+else
+  export RUST_SYSROOT=/home/soyeon/.rustup/toolchains/nightly-2023-06-01-x86_64-unknown-linux-gnu
+  export LD_LIBRARY_PATH=$RUST_SYSROOT/lib:$LD_LIBRARY_PATH
+  export RANLZ_REDIS_HOSTNAME=:ruzzler123!@127.0.0.1:6379
+fi
+
+alias wttr="curl wttr.in/Atlanta\?m"
+PROMPT='%{$fg[yellow]%}[%D{%f/%m/%y} %D{%L:%M:%S}] '$PROMPT
+alias clr="clear"
+alias g="git"
+alias t="tig"
+alias pager="vim -R +AnsiEsc"
+
+# rust based command line utilities
+# ls -> exa
+if hash exa 2>/dev/null; then
+    alias ls='exa --icons'
+    alias l='exa -l --icons --all --group-directories-first --git'
+    alias ll='exa -l --icons --all --all --group-directories-first --git'
+    alias lt='exa -T --icons --git-ignore --level=2 --group-directories-first'
+    alias llt='exa -lT --icons --git-ignore --level=2 --group-directories-first'
+    alias lT='exa -T --icons --git-ignore --level=4 --group-directories-first'
+else
+    alias l='ls -lah'
+    alias ll='ls -alF'
+    alias la='ls -A'
+fi
+# cat -> bat
+if hash bat 2>/dev/null; then
+    alias cat='bat'
+fi
+
+if hash nvim 2>/dev/null; then
+  alias vu="nvim"
+  alias v="nvim"
+  alias vim="nvim"
+  alias vi="nvim"
+  alias ovim="\vim"
+fi
+
+export M2_HOME=/opt/maven
+export PATH=${M2_HOME}/bin:${PATH}
+
+export CARGO_PROFILE_DEV_BUILD_OVERRIDE_DEBUG=true
+
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export JVM_LD_LIBRARY_PATH=$JAVA_HOME/lib/server
+export PATH=$PATH:$JAVA_HOME/bin
+export LITELLM_KEY=sk-ISLRkrf97x0RVhwuYbiNfg
+

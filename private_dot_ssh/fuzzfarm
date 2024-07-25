@@ -1,0 +1,74 @@
+Host fcmain
+  HostName fcmain.gtisc.gatech.edu
+
+Host fcsub
+  HostName fcsub.gtisc.gatech.edu
+
+Host fc*
+  User sslab
+  HostName fcmain.gtisc.gatech.edu
+  IdentityFile /Users/soyeon/lab/conf/sslab/bin/../conf/fuzzfarm_id_rsa
+
+Host f05
+  HostName fcmain.gtisc.gatech.edu
+  Port 22005
+
+Host fc06
+  Port 22006
+
+Host fc07
+  Port 22007
+
+Host fc08
+  Port 22008
+
+Host fc10
+  Port 22010
+
+Host fc11
+  Port 22011
+
+Host fc13
+  Port 22013
+
+Host fc15
+  Port 22015
+
+Host fc16
+  Port 22016
+
+Host fc17
+  Port 22017
+
+Host fc22
+  Port 22022
+
+Host fc23
+  Port 22023
+
+Host fc24
+  Port 22024
+
+Host fc25
+  Port 22025
+
+Host fc26
+  Port 22026
+
+Host fc27
+  Port 22027
+
+Host fc28
+  Port 22028
+
+Host fc29
+  Port 22029
+
+Host fc30
+  Port 22030
+
+Host fc32
+  Port 22032
+
+Host fc34
+  Port 22034

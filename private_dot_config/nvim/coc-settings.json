@@ -1,0 +1,12 @@
+{
+    "diagnostic.displayByAle" : false,
+    "languageserver": {
+        "digestif": {
+            "command": "digestif",
+            "filetypes": ["tex", "plaintex", "context"]
+        }
+    },
+    "clangd.path": "/home/soyeon/.config/coc/extensions/coc-clangd-data/install/10.0.0/clangd_10.0.0/bin/clangd",
+    "snippets.ultisnips.pythonPrompt": false,
+    "rust-analyzer.updates.channel": "nightly",
+}

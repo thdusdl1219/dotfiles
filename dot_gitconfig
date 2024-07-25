@@ -1,0 +1,24 @@
+# This is Git's per-user configuration file.
+[user]
+    name = Soyeon Park
+	email = spark720@gatech.edu
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	s = status
+	c = commit
+	d = diff
+	dc = diff --cached
+	p = push
+	a = add
+[core]
+	editor = nvim
+	pager = "bat --style=plain"
+[safe]
+	directory = /home/soyeon/actions-runner/_work/TestImport/TestImport
+[credential]
+	helper = store
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
