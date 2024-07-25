@@ -56,7 +56,7 @@ Plug 'simnalamburt/vim-mundo'
 Plug 'sheerun/vim-polyglot'
 
 " git
-" Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 Plug 'preservim/nerdcommenter' " https://github.com/preservim/nerdcommenter
 Plug 'godlygeek/tabular' " https://github.com/godlygeek/tabular
@@ -92,7 +92,7 @@ nmap <F8> :TagbarToggle<CR>
 " fzf setting
 set rtp+=~/.fzf
 nnoremap <C-g> :Rg<Cr>
-nnoremap <C-f> :FZF<Cr>
+nnoremap <C-t> :FZF<Cr>
 
 " `gf` opens file under cursor in a new vertical split
 nnoremap gf :vertical wincmd f<CR>

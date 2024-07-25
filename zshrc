@@ -2,6 +2,8 @@
 [[ $COLORTERM = *(24bit|truecolor)* ]] || zmodload zsh/nearcolor
 
 
+
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block, everything else may go below.
@@ -63,3 +65,9 @@ source ~/.env.zsh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+
+# Created by `pipx` on 2024-06-19 05:13:41
+export PATH="$PATH:/home/soyeon/.local/bin"
+
+fpath+=~/.zfunc
+autoload -Uz compinit && compinit

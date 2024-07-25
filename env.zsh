@@ -73,4 +73,14 @@ if hash nvim 2>/dev/null; then
   alias ovim="\vim"
 fi
 
+export M2_HOME=/opt/maven
+export MAVEN_HOME=/opt/maven
+export PATH=${M2_HOME}/bin:${PATH}
+
 export CARGO_PROFILE_DEV_BUILD_OVERRIDE_DEBUG=true
+
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export JVM_LD_LIBRARY_PATH=$JAVA_HOME/lib/server
+export PATH=$PATH:$JAVA_HOME/bin
+export LITELLM_KEY=sk-ISLRkrf97x0RVhwuYbiNfg
+
