@@ -4,9 +4,12 @@ packages:
     - 'zsh'
     - 'nvim'
     - 'node'
+    - 'lazygit'
+    - 'xclip'
   linux:
     apt:
     - 'zsh'
+    - 'xclip'
     snap_classic:
     - 'nvim'
     - 'node'

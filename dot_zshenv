@@ -117,4 +117,4 @@ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export JVM_LD_LIBRARY_PATH=$JAVA_HOME/lib/server
 export PATH=$PATH:$JAVA_HOME/bin
 export LITELLM_KEY=sk-ISLRkrf97x0RVhwuYbiNfg
-
+export EDITOR="vi"
