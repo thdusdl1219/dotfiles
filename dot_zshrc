@@ -19,6 +19,13 @@ zstyle ":history-search-multi-word" page-size "8"
  zi load clvv/fasd
  zi load agkozak/zsh-z
 
+zi ice if"[[ -d ${HOME}/.fonts/ttf ]] && [[ $OSTYPE = linux* ]]" \
+  id-as"meslo" from"gh-r" bpick"Meslo.zip" extract nocompile depth"1" \
+  atclone="rm -f *Windows*; mv -vf *.ttf ${HOME}/.fonts/ttf/; fc-cache -v -f" atpull"%atclone"
+zi light ryanoasis/nerd-fonts
+
+zi ice from'gh-r' as'program' sbin'**/eza -> eza' atclone'cp -vf completions/eza.zsh _eza'
+zi light eza-community/eza
 
 # zi ice lucid wait'0'
 
@@ -63,3 +70,6 @@ export PATH="$PATH:/home/soyeon/.local/bin"
 
 fpath+=~/.zfunc
 autoload -Uz compinit && compinit
+
+zi ice depth'1' atload"[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" nocd
+zi light romkatv/powerlevel10k

@@ -83,13 +83,14 @@ alias pager="vim -R +AnsiEsc"
 
 # rust based command line utilities
 # ls -> exa
-if hash exa 2>/dev/null; then
-    alias ls='exa --icons'
-    alias l='exa -l --icons --all --group-directories-first --git'
-    alias ll='exa -l --icons --all --all --group-directories-first --git'
-    alias lt='exa -T --icons --git-ignore --level=2 --group-directories-first'
-    alias llt='exa -lT --icons --git-ignore --level=2 --group-directories-first'
-    alias lT='exa -T --icons --git-ignore --level=4 --group-directories-first'
+if hash eza 2>/dev/null; then
+  alias l='eza --git-ignore $eza_params'
+  alias ll='eza --all --header --long $eza_params'
+  alias llm='eza --all --header --long --sort=modified $eza_params'
+  alias la='eza -lbhHigUmuSa'
+  alias lx='eza -lbhHigUmuSa@'
+  alias lt='eza --tree $eza_params'
+  alias tree='eza --tree $eza_params'
 else
     alias l='ls -lah'
     alias ll='ls -alF'
