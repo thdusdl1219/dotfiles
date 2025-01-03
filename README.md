@@ -1,9 +1,5 @@
-## Install chezmoi
+# Get started 
 
 ```bash
-sh -c "$(curl -fsLS get.chezmoi.io)"
-```
-
-```bash
-
+sh -c "$(curl -fsLS chezmoi.io/get)" -- init --apply --verbose thdusdl1219
 ```
