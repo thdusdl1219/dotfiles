@@ -10,7 +10,6 @@ packages:
     apt:
     - 'zsh'
     - 'xclip'
-    - 'python3-pip'
     snap_classic:
     - 'nvim'
     - 'node'
