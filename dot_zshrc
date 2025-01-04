@@ -1,3 +1,5 @@
+
+
 #zmodload zsh/zprof
 [[ $COLORTERM = *(24bit|truecolor)* ]] || zmodload zsh/nearcolor
 
@@ -9,7 +11,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source ~/.init.zsh; zzinit
+if [[ -r "${XDG_CONFIG_HOME:-${HOME}/.config}/zi/init.zsh" ]]; then
+  source "${XDG_CONFIG_HOME:-${HOME}/.config}/zi/init.zsh" && zzinit
+fi
+
 
  zi load changyuheng/zsh-interactive-cd
  zi load z-shell/H-S-MW
@@ -27,6 +32,9 @@ zi light ryanoasis/nerd-fonts
 zi ice from'gh-r' as'program' sbin'**/eza -> eza' atclone'cp -vf completions/eza.zsh _eza'
 zi light eza-community/eza
 
+zi ice has'eza' atinit'AUTOCD=1'
+zi light z-shell/zsh-eza
+
 # zi ice lucid wait'0'
 
  zi light zsh-users/zsh-autosuggestions
@@ -43,7 +51,12 @@ zi light eza-community/eza
 
  zi light-mode for @annexes @romkatv \
     @fuzzy \
-    @ext-git @console-tools @z-shell
+    @ext-git \
+    @z-shell \
+    @console-tools
+
+#zi ice from'gh-r' make"all install PREFIX=$ZPFX"
+#zi load jonas/tig
 
 # https://wiki.zshell.dev/ecosystem/plugins/h-s-mw
 setopt extended_history       # record timestamp of command in HISTFILE

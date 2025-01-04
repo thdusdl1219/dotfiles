@@ -10,6 +10,8 @@ packages:
     apt:
     - 'zsh'
     - 'xclip'
+    - 'libncurses5-dev'
+    - 'libncursesw5-dev'
     snap_classic:
     - 'nvim'
     - 'node'

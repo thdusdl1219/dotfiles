@@ -81,21 +81,7 @@ alias g="git"
 alias t="tig"
 alias pager="vim -R +AnsiEsc"
 
-# rust based command line utilities
-# ls -> exa
-if hash eza 2>/dev/null; then
-  alias l='eza --git-ignore $eza_params'
-  alias ll='eza --all --header --long $eza_params'
-  alias llm='eza --all --header --long --sort=modified $eza_params'
-  alias la='eza -lbhHigUmuSa'
-  alias lx='eza -lbhHigUmuSa@'
-  alias lt='eza --tree $eza_params'
-  alias tree='eza --tree $eza_params'
-else
-    alias l='ls -lah'
-    alias ll='ls -alF'
-    alias la='ls -A'
-fi
+
 # cat -> bat
 if hash bat 2>/dev/null; then
     alias cat='bat'
